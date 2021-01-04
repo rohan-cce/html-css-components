@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #19011d;
+
+}
+h2{
+    text-align: center;
+}
+a{
+    position: relative;
+    padding: 15px 30px;
+    margin: 10px;
+    background: #27022d;
+    color:#fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+    transition: 0.5s;
+    overflow: hidden;
+}
+a:nth-child(1):hover{
+    background: red;
+}
+a:nth-child(2):hover{
+    background:#00cc00;
+}
+a:nth-child(3):hover{
+    background: #3385ff;
+}
+a:nth-child(4):hover{
+    background: #660066;
+}
+a:nth-child(5):hover{
+    background: #ff66a3;
+}
+a:nth-child(6):hover{
+    background:  #ff8533;
+}
+a:nth-child(7):hover{
+    background: #ffff33;
+}
+a:nth-child(8):hover{
+    background: #ffffff;
+}
+a:nth-child(9):hover{
+    background: #b32d00;
+}
+a:nth-child(10):hover{
+    background: #000000;
+}
+a:nth-child(11):hover{
+    background: gray;
+}
+a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#fff,transparent);
+    transition: 0.5s;
+}
+a:hover::before{
+    left: 100%;
+}
