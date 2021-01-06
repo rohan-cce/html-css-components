@@ -24,13 +24,28 @@ a span{
     top:0;
     left: 0;
     width: 100%;
+    height: 100%;
     color:#fff;
     background: #6c4ba5;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     letter-spacing: 2px;
     font-size: 18px;
-    
+}
+
+a span:nth-child(2){
+    color:#6c4ba5;
+    background: #fff;
+    overflow: hidden;
+    z-index: 2;
+    transition: 0.5s;
+    clip-path: polygon(73% 0, 100% 0%, 100% 100%, 71% 100%, 39% 52%);
+}
+a span:nth-child(2):hover{
+    clip-path: polygon(89% 0, 100% 0%, 100% 100%, 0 100%, 0 0);
+}
+a span:nth-child(1):hover ~ span:nth-child(2){
+    clip-path: polygon(89% 0, 100% 0%, 100% 100%, 100% 100%, 100% 0);
 }
